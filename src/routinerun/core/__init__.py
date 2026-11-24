@@ -1,1 +1,1 @@
-from .parser import YAMLParser
+from .runner import Runner
