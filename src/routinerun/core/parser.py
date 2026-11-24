@@ -53,7 +53,8 @@ class YAMLParser:
             return Pipeline(
                 name=raw.get('name'),
                 description=str(raw.get('description')),
-                steps=steps
+                steps=steps,
+                source_path=file_path
             )
         
     def _load_all(self) -> Dict[str, Pipeline]:
